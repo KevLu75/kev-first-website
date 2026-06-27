@@ -16,6 +16,11 @@ try:
 except ImportError:  # pragma: no cover - fallback for plain stdlib runtime.
     scipy_stats = None
 
+from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).parent / "core"))
+
 
 WEB_ROOT = Path(__file__).resolve().parent
 PROJECT_ROOT = WEB_ROOT.parent
