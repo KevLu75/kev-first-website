@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>五强溪水利计算平台</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#moduleBody">跳转到主要内容</a>
+    <div id="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">
+            <img src="./assets/hydro-studio-avatar.jpg" alt="水利工程工作室头像" />
+          </div>
+          <div>
+            <h1>水利工程工作室</h1>
+            <p>Hydro Engineering Studio</p>
+          </div>
+        </div>
+        <div class="nav-caption">工作空间</div>
+        <nav id="moduleNav" class="module-nav"></nav>
+        <div class="sidebar-foot">
+          <span class="system-dot" aria-hidden="true"></span>
+          <div><strong>本地计算环境</strong><small>数据仅保存在当前项目</small></div>
+        </div>
+      </aside>
+
+      <main class="workspace">
+        <section class="workbench">
+          <div class="panel main-panel">
+            <div class="panel-header workbench-header">
+              <div>
+                <p class="eyebrow" id="activeModuleKicker">功能区</p>
+                <h2 id="activeModuleTitle">项目数据管理</h2>
+                <p id="moduleStatus" class="module-subtitle">读取示例项目数据</p>
+              </div>
+              <div class="module-tools">
+                <label id="schemePicker">
+                  当前方案
+                  <select id="schemeSelect"></select>
+                </label>
+                <button id="refreshBtn" class="secondary">刷新</button>
+              </div>
+            </div>
+            <div id="moduleBody"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./vendor/gsap.min.js"></script>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

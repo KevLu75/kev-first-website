@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="560" viewBox="0 0 980 560">
+<rect width="100%" height="100%" fill="white"/>
+<text x="490" y="28" text-anchor="middle" font-size="20">调度图线 - 正常蓄水位 100 m（3月至次年3月）</text>
+<line x1="70" y1="50" x2="70" y2="490" stroke="#444"/>
+<line x1="70" y1="490" x2="950" y2="490" stroke="#444"/>
+<line x1="70" y1="490.0" x2="950" y2="490.0" stroke="#ddd"/>
+<text x="62" y="494.0" text-anchor="end" font-size="12">80.3</text>
+<line x1="70" y1="402.0" x2="950" y2="402.0" stroke="#ddd"/>
+<text x="62" y="406.0" text-anchor="end" font-size="12">84.7</text>
+<line x1="70" y1="314.0" x2="950" y2="314.0" stroke="#ddd"/>
+<text x="62" y="318.0" text-anchor="end" font-size="12">89.0</text>
+<line x1="70" y1="226.0" x2="950" y2="226.0" stroke="#ddd"/>
+<text x="62" y="230.0" text-anchor="end" font-size="12">93.3</text>
+<line x1="70" y1="138.0" x2="950" y2="138.0" stroke="#ddd"/>
+<text x="62" y="142.0" text-anchor="end" font-size="12">97.7</text>
+<line x1="70" y1="50.0" x2="950" y2="50.0" stroke="#ddd"/>
+<text x="62" y="54.0" text-anchor="end" font-size="12">102.0</text>
+<text x="70.0" y="514" text-anchor="middle" font-size="13">3月</text>
+<text x="143.3" y="514" text-anchor="middle" font-size="13">4月</text>
+<text x="216.7" y="514" text-anchor="middle" font-size="13">5月</text>
+<text x="290.0" y="514" text-anchor="middle" font-size="13">6月</text>
+<text x="363.3" y="514" text-anchor="middle" font-size="13">7月</text>
+<text x="436.7" y="514" text-anchor="middle" font-size="13">8月</text>
+<text x="510.0" y="514" text-anchor="middle" font-size="13">9月</text>
+<text x="583.3" y="514" text-anchor="middle" font-size="13">10月</text>
+<text x="656.7" y="514" text-anchor="middle" font-size="13">11月</text>
+<text x="730.0" y="514" text-anchor="middle" font-size="13">12月</text>
+<text x="803.3" y="514" text-anchor="middle" font-size="13">1月</text>
+<text x="876.7" y="514" text-anchor="middle" font-size="13">2月</text>
+<text x="950.0" y="514" text-anchor="middle" font-size="13">3月</text>
+<text x="22" y="280" transform="rotate(-90 22,280)" text-anchor="middle" font-size="14">水位 (m)</text>
+<polyline points="70.0,449.4 143.3,449.4 216.7,447.8 290.0,296.5 363.3,193.8 436.7,170.2 510.0,114.2 583.3,90.6 656.7,134.4 730.0,180.9 803.3,249.6 876.7,267.8 950.0,449.4" fill="none" stroke="#1f77b4" stroke-width="2.5"/>
+<polyline points="810.0,62.0 844.0,62.0" fill="none" stroke="#1f77b4" stroke-width="2.5"/>
+<text x="852" y="66" font-size="13">防破坏线</text>
+<polyline points="70.0,385.5 143.3,385.5 216.7,384.3 290.0,270.8 363.3,193.8" fill="none" stroke="#ff7f0e" stroke-width="1.8" stroke-dasharray="6 4"/>
+
+
+
+
+
+
+
+
+<polyline points="810.0,84.0 844.0,84.0" fill="none" stroke="#ff7f0e" stroke-width="2.5" stroke-dasharray="6 4"/>
+<text x="852" y="88" font-size="13">辅助线1</text>
+<polyline points="70.0,321.6 143.3,321.6 216.7,320.8 290.0,245.2 363.3,193.8" fill="none" stroke="#2ca02c" stroke-width="1.8" stroke-dasharray="6 4"/>
+
+
+
+
+
+
+
+
+<polyline points="810.0,106.0 844.0,106.0" fill="none" stroke="#2ca02c" stroke-width="2.5" stroke-dasharray="6 4"/>
+<text x="852" y="110" font-size="13">辅助线2</text>
+<polyline points="70.0,257.7 143.3,257.7 216.7,257.3 290.0,219.5 363.3,193.8" fill="none" stroke="#9467bd" stroke-width="1.8" stroke-dasharray="6 4"/>
+
+
+
+
+
+
+
+
+<polyline points="810.0,128.0 844.0,128.0" fill="none" stroke="#9467bd" stroke-width="2.5" stroke-dasharray="6 4"/>
+<text x="852" y="132" font-size="13">辅助线3</text>
+<polyline points="70.0,193.8 143.3,193.8 216.7,193.8 290.0,193.8 363.3,193.8" fill="none" stroke="#d62728" stroke-width="2.5"/>
+
+
+
+
+
+
+
+
+<polyline points="810.0,150.0 844.0,150.0" fill="none" stroke="#d62728" stroke-width="2.5"/>
+<text x="852" y="154" font-size="13">防洪限制水位</text>
+<polyline points="70.0,90.6 143.3,90.6 216.7,90.6 290.0,90.6 363.3,90.6 436.7,90.6 510.0,90.6 583.3,90.6 656.7,90.6 730.0,90.6 803.3,90.6 876.7,90.6 950.0,90.6" fill="none" stroke="#111111" stroke-width="1.8"/>
+<polyline points="810.0,172.0 844.0,172.0" fill="none" stroke="#111111" stroke-width="2.5"/>
+<text x="852" y="176" font-size="13">正常蓄水位</text>
+</svg>

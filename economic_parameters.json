@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "comparison": {
+    "discountRate": 0.10,
+    "hydroLifeYears": 50,
+    "thermalLifeYears": 25,
+    "constructionEndYear": 11,
+    "damBottomElevationM": 30.0
+  },
+  "unitCosts": {
+    "thermalPlantInvestmentPer10kKw": 825.0,
+    "coalMineInvestmentPer100mKwh": 735.0,
+    "thermalOperationRate": 0.08,
+    "thermalFuelPer100mKwh": 210.0,
+    "floodBenefitPer10kMu": 1000.0,
+    "baseReducedFarmland10kMu": 5.0,
+    "reducedFarmlandPer100m3": 1.132
+  },
+  "interpolation": {
+    "mechanicalInvestment": [[92.0, 18190.0], [110.0, 25808.0], [150.0, 27981.0], [175.0, 28805.0]],
+    "mechanicalRepair": [[92.0, 355.9], [110.0, 441.0], [150.0, 477.0], [175.0, 489.7]],
+    "permanentInvestmentByDamHeight": [[78.5, 21019.0], [87.5, 53817.0], [94.5, 56356.0], [104.0, 61850.0]],
+    "civilRepairByDamHeight": [[78.5, 283.3], [87.5, 306.7], [94.5, 319.0], [104.0, 352.6]],
+    "otherInvestmentByNormalLevel": [[100.0, 56028.0], [108.0, 62854.0], [115.0, 65816.0], [120.0, 71333.0]],
+    "compensationByNormalLevel": [[100.0, 24989.0], [108.0, 38547.0], [115.0, 57093.0], [120.0, 80000.0]],
+    "hydroOperationYuanPerKwByNormalLevel": [[100.0, 2.3], [108.0, 2.2], [115.0, 2.0], [120.0, 2.0]],
+    "houseRepairByNormalLevel": [[100.0, 17.1], [108.0, 17.4], [115.0, 17.5], [120.0, 17.7]],
+    "compensationAnnualChargeByNormalLevel": [[100.0, 442.3], [108.0, 647.6], [115.0, 974.7], [120.0, 1328.0]]
+  },
+  "distributions": {
+    "hydroInvestmentByNormalLevel": {
+      "100": [0.0, 0.131, 0.125, 0.096, 0.136, 0.073, 0.133, 0.148, 0.102, 0.045, -0.209],
+      "108": [0.0, 0.128, 0.118, 0.091, 0.130, 0.072, 0.124, 0.121, 0.107, 0.055, -0.155],
+      "115": [0.0, 0.125, 0.118, 0.085, 0.144, 0.054, 0.121, 0.133, 0.144, 0.053, -0.183],
+      "120": [0.127, 0.120, 0.081, 0.108, 0.070, 0.113, 0.145, 0.115, 0.097, 0.021, -0.201]
+    },
+    "compensationByNormalLevel": {
+      "100": [0.0, 0.05, 0.10, 0.20, 0.25, 0.20, 0.20, 0.0, 0.0, 0.0, 0.0],
+      "108": [0.0, 0.05, 0.10, 0.20, 0.25, 0.20, 0.20, 0.0, 0.0, 0.0, 0.0],
+      "115": [0.0, 0.05, 0.10, 0.20, 0.25, 0.20, 0.20, 0.0, 0.0, 0.0, 0.0],
+      "120": [0.0, 0.125, 0.125, 0.167, 0.163, 0.163, 0.129, 0.128, 0.0, 0.0, 0.0]
+    },
+    "thermalPlant": {"8": 0.55, "9": 0.40, "10": 0.03, "11": 0.02},
+    "coalMine": {"6": 0.16, "7": 0.34, "8": 0.35, "9": 0.10, "10": 0.05},
+    "initialOperation": {"9": 0.20, "10": 0.70, "11": 0.90}
+  },
+  "historicalRequiredFloodStorage100m3": [15.2, 13.6, 10.1, 6.5, 6.2, 2.31, 1.38, 0.31]
+}

@@ -1,0 +1,259 @@
+{
+  "projectName": "当前项目",
+  "description": "从示例项目初始化，可在网页中逐步编辑。",
+  "baseData": {
+    "storageCurve": "inputs/storage_curve.csv",
+    "areaCurve": "inputs/area_curve.csv",
+    "tailwaterCurve": "inputs/tailwater_curve.csv",
+    "runoffSeries": "inputs/runoff_series.csv",
+    "designFlood": "inputs/design_flood.csv"
+  },
+  "parameters": {
+    "navigationIrrigationConsumption": {
+      "description": "航运、灌溉等综合利用消耗，后续可按月份细化。",
+      "unit": "m3/s",
+      "monthly": {
+        "4月": 10,
+        "5月": 45,
+        "6月": 45,
+        "7月": 45,
+        "8月": 45,
+        "9月": 45,
+        "10月": 10,
+        "11月": 10,
+        "12月": 10,
+        "1月": 10,
+        "2月": 10,
+        "3月": 10
+      }
+    },
+    "maxFetchKm": 15,
+    "designWindSpeedMs": 12,
+    "designGuaranteeRate": 0.875,
+    "annualSedimentation": {
+      "value": 0,
+      "unit": "亿m3/年",
+      "note": "当前计算未单独扣减年淤积量，保留为可配置参数。"
+    },
+    "damServiceLifeYears": 50,
+    "downstreamSafeFlowM3s": 20000,
+    "discountRate": 0.1
+  },
+  "schemes": [
+    {
+      "id": "scheme-120",
+      "name": "方案一",
+      "normalWaterLevel": 120.0,
+      "upstreamImpact": {
+        "reducedInstalledCapacity": 0.284,
+        "reducedAverageEnergy": 0.228
+      },
+      "spillway": {
+        "holes": 10,
+        "crestElevation": 108.0,
+        "orificeWidth": 15.0,
+        "orificeHeight": 12.0
+      },
+      "middleOutlet": {
+        "holes": 1,
+        "sillElevation": 82.0,
+        "orificeWidth": 13.0,
+        "orificeHeight": 8.0
+      },
+      "reserveCapacity": 30.0
+    },
+    {
+      "id": "scheme-115",
+      "name": "方案二",
+      "normalWaterLevel": 115.0,
+      "upstreamImpact": {
+        "reducedInstalledCapacity": 0.02,
+        "reducedAverageEnergy": 0.0
+      },
+      "spillway": {
+        "holes": 12,
+        "crestElevation": 101.0,
+        "orificeWidth": 15.0,
+        "orificeHeight": 14.0
+      },
+      "middleOutlet": {
+        "holes": 1,
+        "sillElevation": 82.0,
+        "orificeWidth": 13.0,
+        "orificeHeight": 8.0
+      },
+      "reserveCapacity": 25.0
+    },
+    {
+      "id": "scheme-108",
+      "name": "方案三",
+      "normalWaterLevel": 108.0,
+      "upstreamImpact": {
+        "reducedInstalledCapacity": 0.0,
+        "reducedAverageEnergy": 0.0
+      },
+      "spillway": {
+        "holes": 12,
+        "crestElevation": 94.0,
+        "orificeWidth": 15.0,
+        "orificeHeight": 14.0
+      },
+      "middleOutlet": {
+        "holes": 1,
+        "sillElevation": 82.0,
+        "orificeWidth": 13.0,
+        "orificeHeight": 8.0
+      },
+      "reserveCapacity": 20.0
+    },
+    {
+      "id": "scheme-100",
+      "name": "方案四",
+      "normalWaterLevel": 100.0,
+      "upstreamImpact": {
+        "reducedInstalledCapacity": 0.0,
+        "reducedAverageEnergy": 0.0
+      },
+      "spillway": {
+        "holes": 14,
+        "crestElevation": 84.0,
+        "orificeWidth": 15.0,
+        "orificeHeight": 16.0
+      },
+      "middleOutlet": {
+        "holes": 0,
+        "sillElevation": 82.0,
+        "orificeWidth": 13.0,
+        "orificeHeight": 8.0
+      },
+      "reserveCapacity": 15.0
+    },
+    {
+      "id": "scheme-custom-5",
+      "name": "方案5",
+      "normalWaterLevel": 115.0,
+      "upstreamImpact": {
+        "reducedInstalledCapacity": 0.02,
+        "reducedAverageEnergy": 0.0
+      },
+      "spillway": {
+        "holes": 12,
+        "crestElevation": 101.0,
+        "orificeWidth": 15.0,
+        "orificeHeight": 14.0
+      },
+      "middleOutlet": {
+        "holes": 1,
+        "sillElevation": 82.0,
+        "orificeWidth": 13.0,
+        "orificeHeight": 8.0
+      },
+      "reserveCapacity": 25.0
+    },
+    {
+      "id": "scheme-custom-6",
+      "name": "新方案6",
+      "normalWaterLevel": 108.0,
+      "upstreamImpact": {
+        "reducedInstalledCapacity": 0.0,
+        "reducedAverageEnergy": 0.0
+      },
+      "spillway": {
+        "holes": 12,
+        "crestElevation": 94.0,
+        "orificeWidth": 15.0,
+        "orificeHeight": 14.0
+      },
+      "middleOutlet": {
+        "holes": 1,
+        "sillElevation": 82.0,
+        "orificeWidth": 13.0,
+        "orificeHeight": 8.0
+      },
+      "reserveCapacity": 20.0
+    }
+  ],
+  "calculationState": {
+    "engineVersion": 1,
+    "revision": 3,
+    "deadWaterLevels": [],
+    "guaranteedOutputLevels": [],
+    "dispatchChartLevels": [],
+    "deadWaterSchemeIds": [
+      "scheme-100",
+      "scheme-108",
+      "scheme-115",
+      "scheme-120"
+    ],
+    "guaranteedOutputSchemeIds": [
+      "scheme-100",
+      "scheme-108",
+      "scheme-115",
+      "scheme-120"
+    ],
+    "dispatchChartSchemeIds": [
+      "scheme-100",
+      "scheme-108",
+      "scheme-115",
+      "scheme-120"
+    ],
+    "repeatedCapacityMachineSchemeIds": [
+      "scheme-100",
+      "scheme-108",
+      "scheme-115"
+    ],
+    "repeatedCapacityManualSchemeIds": [
+      "scheme-100",
+      "scheme-120"
+    ],
+    "dischargeCapacitySchemeIds": [
+      "scheme-100",
+      "scheme-108",
+      "scheme-115",
+      "scheme-120"
+    ],
+    "floodRoutingSchemeIds": [
+      "scheme-100",
+      "scheme-108",
+      "scheme-115",
+      "scheme-120"
+    ],
+    "damCrestSchemeIds": [
+      "scheme-100",
+      "scheme-108",
+      "scheme-115",
+      "scheme-120"
+    ],
+    "repeatedCapacitySelections": {
+      "scheme-100": {
+        "schemeId": "scheme-100",
+        "normalWaterLevel": 100.0,
+        "mode": "manual",
+        "deltaN": 15.0,
+        "repeatedCapacity": 18.639477064005362,
+        "controlPoints": [
+          {
+            "利用小时数_h": 252.8782,
+            "重复容量_万kW": 88.256
+          },
+          {
+            "利用小时数_h": 810.0842,
+            "重复容量_万kW": 58.9631
+          },
+          {
+            "利用小时数_h": 1667.3243,
+            "重复容量_万kW": 31.371
+          },
+          {
+            "利用小时数_h": 2209.2224,
+            "重复容量_万kW": 20.5988
+          },
+          {
+            "利用小时数_h": 2738.8743,
+            "重复容量_万kW": 17.386
+          }
+        ]
+      }
+    }
+  }
+}
